@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# Если зашли без www, редиректим на www
+RewriteCond %{HTTP_HOST} ^serviceauto76\.ru [NC]
+RewriteRule ^(.*)$ https://www.serviceauto76.ru/$1 [L,R=301]
+
+# Всегда используем https (если вдруг попадут на http)
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://www.serviceauto76.ru/$1 [L,R=301]

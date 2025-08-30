@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /cart/
+Allow: /
+
+Host: www.serviceauto76.ru
+Sitemap: https://www.serviceauto76.ru/sitemap.xml
